@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Texto em Audio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <div id="page-wrapper">
+        <h1>Conversor de Texto em Áudio</h1>
+        <p id="msg"></p>
+        <input type="text" placeholder="Digite algo aqui..." name="speech-msg" id="speech-msg" x-webkit-speech>
+          <div class="option">
+              <label for="voice">Voz</label>
+              <select name="voice" id="voz"></select>
+          </div>
+          <div class="option">
+              <label for="volume">Volume</label>
+              <input type="range" min="0" max="1" step="0.1" name="volume" id="volume" value="1">
+          </div>
+        <button id="fale">FALE</button>
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>
